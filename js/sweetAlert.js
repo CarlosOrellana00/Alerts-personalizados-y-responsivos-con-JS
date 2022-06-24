@@ -2,10 +2,10 @@
   const {value: pais} = await Swal.fire({
     title: "Bienvenido!",
     // title:
-    text: "bienvenido a mi pagina web",
+    text: "bienvenido a mi pagina web, de donde eres?",
     // html: '<b class=rojo> Hello There! </b>'
     // ICONOS: 'success','warning','alert','info','question'
-    icon: 'success',
+    icon: 'question',
     confirmButtonText: 'seleccionar',
     footer:'<span class="rojo">información importante</span>',
     // width: '50%',
@@ -41,39 +41,41 @@
       Uruguay : 'Uruguay'
     },
 
-    //  customClass:
-    // 	container:
-    // 	popup:
-    // 	header:
-    // 	title:
-    // 	closeButton:
-    // 	icon:
-    // 	image:
-    // 	content:
-    // 	input:
-    // 	actions:
-    // 	confirmButton:
-    // 	cancelButton:
-    // 	footer:
+     customClass:
+     {
+      // 	container:
+      // 	popup:
+      // 	header:
+      // 	title:
+      // 	closeButton:
+      // 	icon:
+      // 	image:
+      // 	content:
+      // 	input:
+      // 	actions:
+      // 	confirmButton:
+      // 	cancelButton:
+      // 	footer:
+     },
 
-    // showConfirmButton:
-    // confirmButtonColor:
-    // confirmButtonAriaLabel:
+    showConfirmButton: true,
+    confirmButtonColor: '#3E60E9',
+    confirmButtonAriaLabel: 'Confirmar',
 
-    // showCancelButton:
-    // cancelButtonText:
+    // BOTON DE CANCELAR
+    showCancelButton: true,
+    cancelButtonText: 'Cancelar',
     // cancelButtonColor:
-    // cancelButtonAriaLabel:
+    cancelButtonAriaLabel: 'Cancelar',
 
-    // buttonsStyling:
-    // showCloseButton:
-    // closeButtonAriaLabel:
+    buttonsStyling: true,
+    showCloseButton: true,
+    closeButtonAriaLabel: 'cerrar ventana de Alert',
 
-
-    // imageUrl:
-    // imageWidth:
+    imageUrl: 'img/4.png',
+    imageWidth: '200px',
     // imageHeight:
-    // imageAlt:
+    imageAlt: 'camara'
   });
 
   if (pais){
